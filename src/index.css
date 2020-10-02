@@ -1,0 +1,109 @@
+body {
+  margin: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.contact__list {
+  list-style: none;
+}
+.contact__btn {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.contact__span {
+  font-size: 15px;
+  font-family: "Roboto";
+}
+
+.phonebook__form {
+  width: 230px;
+  border: 1px solid #3498db;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  margin: 0 auto;
+}
+
+.form__input {
+  margin: 10px;
+}
+
+.form__title {
+  text-align: center;
+  font-weight: 700;
+}
+
+.form__input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #3498db;
+}
+
+.form__btn {
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #3498db;
+  padding: 10px 20px;
+  color: #3498db;
+  font-size: 15px;
+  font-family: "Roboto";
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.form__btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: #3498db;
+  z-index: -1;
+  transition: 0.8s;
+  border-radius: 0 0 50% 50%;
+}
+.form__btn:hover {
+  color: #fff;
+}
+.form__btn:hover::before {
+  height: 180%;
+}
+
+.filter {
+  font-family: "Roboto";
+  margin: 10px;
+}
+
+.filter label {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.filter input {
+  font-family: "Roboto";
+  margin: 10px;
+  border: 1px solid #3498db;
+}
+
+/* ================== */
+
+
+
